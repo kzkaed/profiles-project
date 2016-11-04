@@ -11,6 +11,23 @@ import UIKit
 class ViewController: UIViewController {
     
     var currentProfilePosition = 0
+    var currentProfile = "Katherine_Johnson"
+    
+    let profileNames: [String:String] =
+        ["Katherine_Johnson": "Katherine Johnson",
+         "Margaret_Hamilton": "Margaret Hamilton",
+         "Grace_Hopper": "Grace Hopper",
+         "Latanya_Sweeney": "Latanya Sweeney",
+         "Barbara_Liskov": "Barbara Liskov",
+         "Ellen_Ochoa": "Ellen Ochoa"]
+    
+    let profileUrls: [String:String] =
+        ["Katherine_Johnson": "https://en.wikipedia.org/wiki/Katherine_Johnson",
+         "Margaret_Hamilton": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)",
+         "Grace_Hopper": "https://en.wikipedia.org/wiki/Grace_Hopper",
+         "Latanya_Sweeney": "https://en.wikipedia.org/wiki/Latanya_Sweeney",
+         "Barbara_Liskov": "https://en.wikipedia.org/wiki/Barbara_Liskov",
+         "Ellen_Ochoa": "https://en.wikipedia.org/wiki/Ellen_Ochoa"]
     
     let profiles = ["Katherine_Johnson",
                     "Margaret_Hamilton",
@@ -33,12 +50,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainImage: UIImageView!
     
     @IBAction func NexProfile(_ sender: UIButton) {
-        let imageFileName = getNextProfile() + ".jpg"
+        currentProfile = getNextProfile()
+        let imageFileName = currentProfile + ".jpg"
         mainImage.image=UIImage(named: imageFileName)
-        mainText.text=getNextProfile()
-    
-    
+        mainText.text=profileNames[currentProfile]
     }
 
+    @IBAction func moreInfo(_ sender: UIButton) {
+        let profileUrl = profileUrls[currentProfile]
+        if let url = URL(string: profileUrl!) {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
 }
 
