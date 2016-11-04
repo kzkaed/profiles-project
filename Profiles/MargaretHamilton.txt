@@ -1,0 +1,5 @@
+Margaret Heafield Hamilton (born August 17, 1936)[1] is a computer scientist, systems engineer and business owner. She was Director of the Software Engineering Division[2] of the MIT Instrumentation Laboratory, which developed on-board flight software for the Apollo space program.[3] In 1986, she became the founder and CEO of Hamilton Technologies, Inc., in Cambridge, Massachusetts. The company was developed around the Universal Systems Language based on her paradigm of Development Before the Fact (DBTF) for systems and software design.[4]
+
+Hamilton has published over 130 papers, proceedings, and reports about the 60 projects and six major programs in which she has been involved.
+
+https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)
