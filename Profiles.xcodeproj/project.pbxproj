@@ -80,7 +80,6 @@
 			children = (
 				A8811AF01DCD275C0048DA0E /* text */,
 				A8811AE31DCD26F20048DA0E /* images */,
-				A8811AB61DCD241D0048DA0E /* AppDelegate.swift */,
 				A8811AB81DCD241D0048DA0E /* ViewController.swift */,
 				A8811ABA1DCD241D0048DA0E /* Main.storyboard */,
 				A8811ABD1DCD241D0048DA0E /* Assets.xcassets */,
@@ -92,6 +91,7 @@
 		A8811AC81DCD24E30048DA0E /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A8811AB61DCD241D0048DA0E /* AppDelegate.swift */,
 				A8811ABF1DCD241D0048DA0E /* LaunchScreen.storyboard */,
 				A8811AC21DCD241D0048DA0E /* Info.plist */,
 			);

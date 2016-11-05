@@ -49,13 +49,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainImage: UIImageView!
     
-    @IBAction func NexProfile(_ sender: UIButton) {
-        currentProfile = getNextProfile()
-        let imageFileName = currentProfile + ".jpg"
-        mainImage.image=UIImage(named: imageFileName)
-        mainText.text=profileNames[currentProfile]
+    @IBAction func nextProfile(_ sender: UIButton) {
+       currentProfile = getNextProfile()
+       let imageFileName = currentProfile + ".jpg"
+       mainImage.image=UIImage(named: imageFileName)
+       mainText.text=profileNames[currentProfile]
     }
-
+  
     @IBAction func moreInfo(_ sender: UIButton) {
         let profileUrl = profileUrls[currentProfile]
         if let url = URL(string: profileUrl!) {

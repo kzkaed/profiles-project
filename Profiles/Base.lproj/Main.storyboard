@@ -30,7 +30,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="NexProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zf-qi-JfX"/>
+                                    <action selector="nextProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tb-ff-G0z"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Katherine_Johnson" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-iJ-5IK">
